@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pulsar-operator
+  name: pulsar-operator-sn-pf
   namespace: sn-pf
   finalizers:
   - resources-finalizer.argocd.argoproj.io
