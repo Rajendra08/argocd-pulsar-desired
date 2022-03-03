@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: function-mesh
+  name: function-mesh-sn-pf
   namespace: sn-pf
   finalizers:
   - resources-finalizer.argocd.argoproj.io
