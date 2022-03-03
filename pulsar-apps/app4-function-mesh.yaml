@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: function-mesh
+  namespace: sn-pf
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: ''
+    namespace: sn-pf
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: ''
+    repoURL: 'https://charts.streamnative.io'
+    targetRevision: 0.1.7
+    chart: function-mesh-operator
+  project: default
+

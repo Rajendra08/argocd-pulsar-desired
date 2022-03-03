@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vault-operator
+  namespace: sn-pf
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: ''
+    namespace: sn-pf
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: ''
+    repoURL: 'https://kubernetes-charts.banzaicloud.com'
+    targetRevision: 1.15.2
+    chart: vault-operator
+  project: default
