@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pulsar-cluster
+  name: pulsar-cluster-pulsar
   namespace: pulsar
   finalizers:
   - resources-finalizer.argocd.argoproj.io
