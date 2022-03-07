@@ -18,3 +18,5 @@ spec:
     targetRevision: 0.8.23
     chart: pulsar-operator
   project: default
+  syncPolicy:
+    automated: {}
