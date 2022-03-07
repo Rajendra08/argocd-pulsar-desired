@@ -18,3 +18,5 @@ spec:
     targetRevision: 1.15.2
     chart: vault-operator
   project: default
+  syncPolicy:
+    automated: {}
