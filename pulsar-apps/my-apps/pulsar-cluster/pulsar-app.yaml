@@ -1,0 +1,10 @@
+apiVersion: v2
+name: pulsar-app 
+type: application
+version: 1.2.32
+appVersion: "1.2.32"
+dependencies:
+- name: pulsar
+  version: 1.2.32
+  repository: https://charts.streamnative.io
+  chart: sn-platform
