@@ -7,4 +7,4 @@ dependencies:
 - name: pulsar
   version: 1.2.32
   repository: https://charts.streamnative.io
-  chart: sn-platform
+  chart: streamnative/sn-platform
