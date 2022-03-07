@@ -2,7 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: vault-operator
-  namespace: sn-pf
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1" 
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -16,3 +18,5 @@ spec:
     targetRevision: 1.15.2
     chart: vault-operator
   project: default
+  syncPolicy:
+    automated: {}
