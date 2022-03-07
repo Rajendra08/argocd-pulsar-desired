@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: my-apps/pulsar-cluster
+    path: pulsar-apps/my-apps/pulsar-cluster
     repoURL: https://github.com/Rajendra08/argocd-pulsar-desired.git
     targetRevision: HEAD
   syncPolicy:
