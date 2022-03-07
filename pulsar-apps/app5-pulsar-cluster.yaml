@@ -19,6 +19,4 @@ spec:
     chart: sn-platform
   project: default
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: {}
