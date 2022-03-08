@@ -6,4 +6,5 @@ appVersion: "1.2.32"
 dependencies:
 - name: pulsar
   repository: https://charts.streamnative.io
+  version: 1.2.32
   condition: sn-platform.enabled
