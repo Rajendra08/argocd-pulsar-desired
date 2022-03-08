@@ -5,6 +5,6 @@ version: 1.2.32
 appVersion: "1.2.32"
 dependencies:
 - name: pulsar
-  version: 1.2.32
+  targetRevision: 1.2.32
   repository: https://charts.streamnative.io
-  chart: streamnative/sn-platform
+  chart: sn-platform
