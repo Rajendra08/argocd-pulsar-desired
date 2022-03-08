@@ -1,8 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pulsar-app-final
+  name: pulsar-app
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -11,10 +13,13 @@ spec:
     namespace: pulsar
     server: 'https://kubernetes.default.svc'
   source:
-    path: my-apps/pulsar-cluster
+    path: pulsar-apps/sn-platform
     repoURL: 'https://github.com/Rajendra08/argocd-pulsar-desired'
     targetRevision: HEAD
     helm:
+      parameters:
+        - name: initialize
+          value: "true"
       valueFiles:
         - values.yaml
   project: default
